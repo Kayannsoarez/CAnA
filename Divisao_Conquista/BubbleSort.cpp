@@ -1,9 +1,9 @@
+#include <climits>
 #include <cmath>
 #include <ctime>
-#include <time.h>
-#include <climits>
 #include <fstream>
 #include <iostream>
+#include <time.h>
 #include <unistd.h>
 
 using namespace std;
@@ -43,40 +43,39 @@ void BubbleSort(int *vetor, int p, int r) {
         stop = false;
       }
     }
-    if(stop)
+    if (stop)
       break;
   }
 }
 
 int main() {
 
-	int N = 2000;
-	int* vetor = new int [N];
-	srand(time(NULL));
-  
-	for(int i = 0; i<N; i++) vetor[i] = rand() % 10000;
+  int N = 2000;
+  int *vetor = new int[N];
+  srand(time(NULL));
 
-	imprimir_vetor(vetor, N, "entrada.txt");
-	int* vetor2 = new int [N];
-	int* vetor3 = new int [N];
-  
-	for (int i = 0; i<N; i++){ 
-    vetor2[i] = vetor[i]; vetor3[i] = vetor[i]; 
+  for (int i = 0; i < N; i++)
+    vetor[i] = rand() % 10000;
+
+  imprimir_vetor(vetor, N, "entrada.txt");
+  int *vetor2 = new int[N];
+  int *vetor3 = new int[N];
+
+  for (int i = 0; i < N; i++) {
+    vetor2[i] = vetor[i];
+    vetor3[i] = vetor[i];
   }
 
   int time_start = getTick();
-  BubbleSort(vetor,0,N-1);
+  BubbleSort(vetor, 0, N - 1);
   int time_finish = getTick();
 
   cout << "BubbleSort " << (time_finish - time_start) << "miliseg" << endl;
 
   imprimir_vetor(vetor, N, "saida_bubble.txt");
 
-  delete [] vetor;
-	delete [] vetor2;
-	delete [] vetor3;
-	return 0;
-  
+  delete[] vetor;
+  delete[] vetor2;
+  delete[] vetor3;
+  return 0;
 }
-
-
