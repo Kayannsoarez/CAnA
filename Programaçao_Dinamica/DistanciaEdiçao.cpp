@@ -159,7 +159,7 @@ void imprime_edit_op(int i, int j, char **R, string X, string Y, string op1,
   }
 }
 
-int main() {
+int main(){
   unsigned int t1, t2;
 
   // string X = "SNOWY";
