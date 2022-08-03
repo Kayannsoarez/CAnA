@@ -123,6 +123,6 @@ int main() {
   cout << "Simbolo - (para esquerda)" << endl;
   cout << "Simbolo 2 (para ambos: cima ou esquerda)" << endl << endl;
 
-cout << "LCS " << (time_finish - time_start) << "miliseg" << endl;  
+  cout << "LCS " << (time_finish - time_start) << "miliseg" << endl;  
   return 0;
 }
