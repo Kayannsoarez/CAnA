@@ -1,0 +1,14 @@
+9
+8 1 1 2 9 3 9 4 9 5 9 6 9 7 9 8 9
+8 0 1 2 1 3 9 4 9 5 9 6 9 7 9 8 9
+8 0 9 1 1 3 1 4 9 5 9 6 9 7 9 8 9
+8 0 9 1 9 2 1 4 1 5 9 6 9 7 9 8 9
+8 0 9 1 9 2 9 3 1 5 1 6 9 7 9 8 9
+8 0 9 1 9 2 9 3 9 4 1 6 1 7 9 8 9
+8 0 9 1 9 2 9 3 9 4 9 5 1 7 1 8 9
+8 0 9 1 9 2 9 3 9 4 9 5 9 6 1 8 1
+8 0 9 1 9 2 9 3 9 4 9 5 9 6 9 7 1
+
+EXPLICAÇÃO:
+- 1o linha: numero N de vertices (vertices numerados de 0 a N-1)
+- 2o linha em diante informa o grau de um vertice e sua lista de vizinhos seguida do peso das arestas
