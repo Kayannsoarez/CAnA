@@ -1,0 +1,11 @@
+5
+3 1 10 3 30 4 100
+1 2 50
+1 4 10
+2 2 20 4 60
+0
+
+
+EXPLICACAO:
+- 1o linha: numero N de vertices (vertices numerados de 0 a N-1)
+- 2o linha em diante informa o grau de um vertice e sua lista de vizinhos seguida do peso das arestas
